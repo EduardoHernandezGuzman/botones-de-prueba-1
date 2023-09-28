@@ -1,0 +1,89 @@
+/* BOTÓN 1 */
+#boton01 {
+ font-size: 17px;
+ padding: 0.5em 2em;
+ border: transparent;
+ box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+ background: dodgerblue;
+ color: white;
+ border-radius: 8px;
+}
+
+#boton01:hover {
+ background: rgb(63, 152, 241);
+ 
+}
+
+#boton01:active {
+ transform: translate(0.1em, 0.1em);
+}
+
+/* BOTÓN 2 */
+#boton02 {
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 800;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.8em;
+    box-shadow: 0.1em 0.1em;
+  }
+  
+  #boton02:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  #boton02:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+
+  /* BOTÓN 3 */
+  #boton03 {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 10rem;
+    color: lightsalmon;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   #boton03:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   #boton03:hover:not(:disabled) {
+    background: lightsalmon;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   #boton03:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+   /* BOTÓN 4 */
+   #boton04 {
+    color: #ffffff;
+    font-size: 17px;
+    background-color: #e67e22;
+    border: 2px solid #f39c12;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0px 6px 0px #d35400;
+    transition: all .1s;
+   }
+   
+   #boton04:active {
+    box-shadow: 0px 2px 0px #d35400;
+    position: relative;
+    top: 4px;
+   }
