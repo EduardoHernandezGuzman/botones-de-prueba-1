@@ -226,7 +226,7 @@
   }
   
   #boton08:active {
-    background-color: #acca1a;
+    background-color: white;
     box-shadow: none;
     transform: translateY(4px);
   }
