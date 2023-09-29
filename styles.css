@@ -4,13 +4,13 @@
  padding: 0.5em 2em;
  border: transparent;
  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
- background: dodgerblue;
+ background: #1b83dd;
  color: white;
  border-radius: 8px;
 }
 
 #boton01:hover {
- background: rgb(63, 152, 241);
+ background: rgb(30,145,237);
  
 }
 
@@ -48,7 +48,7 @@
     font-size: 1rem;
     width: 10em;
     border-radius: 10rem;
-    color: lightsalmon;
+    color: #ff5f7c;
     box-shadow: 0 0.4rem #dfd9d9;
     cursor: pointer;
    }
@@ -60,7 +60,7 @@
    }
    
    #boton03:hover:not(:disabled) {
-    background: lightsalmon;
+    background: #ff5f7c;
     color: white;
     text-shadow: 0 0.1rem #bcb4b4;
    }
@@ -74,16 +74,160 @@
    #boton04 {
     color: #ffffff;
     font-size: 17px;
-    background-color: #e67e22;
-    border: 2px solid #f39c12;
+    background-color: #ffcc4b;
+    border: 2px solid #ed9600;
     border-radius: 8px;
     padding: 12px;
-    box-shadow: 0px 6px 0px #d35400;
+    box-shadow: 0px 6px 0px #ffb224;
     transition: all .1s;
    }
    
    #boton04:active {
-    box-shadow: 0px 2px 0px #d35400;
+    box-shadow: 0px 2px 0px #ffe56c;
     position: relative;
     top: 4px;
    }
+
+    /* BOTÓN 5 */
+    #boton05{
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: rgb(89, 182, 35);
+    border: none;
+    color: white;
+    position: relative;
+    width: 120px;
+    height: 45px;
+    transition: background-color 0.2s ease-in, all 0.15s ease-in;
+  }
+
+  #boton05:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Botón 5";
+    width: 120px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(5px, 5px);
+    background-color: white;
+    color: rgb(53, 144, 0);
+    border: 2px solid rgb(53, 144, 0);
+    transition: all 0.15s ease-in;
+  }
+  
+  #boton05:hover::after {
+    transform: translate(-8px, -9px);
+  }
+  
+  #boton05:hover {
+    transform: translate(5px, 5px);
+  }
+  
+  #boton05:active::after {
+    background-color: rgb(232, 255, 219);
+  }
+
+  /* BOTÓN 6 */
+  #boton06 {
+    background-color: black;
+    padding: 7px 10px;
+    border: 1px solid #bbb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  #boton06:hover {
+    background-color: red;
+    color: #fff;
+    box-shadow: -20px 50px 50px rgba(0,0,0,0.2);
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  /* BOTÓN 7 */
+  #boton07 {
+    --color: #d43e10;
+    background-color: #fff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--color);
+  }
+  
+  #boton07:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50px;
+    bottom: 100%;
+    right: 100%;
+    transition: .8s ease;
+  }
+  
+  #boton07:hover {
+    color: #fff;
+  }
+  
+  #boton07:hover:before {
+    bottom: -30px;
+    left: -30px;
+  }
+  
+  #boton07:active:before {
+    background: #3a0ca3;
+    transition: background 2s;
+  }
+
+  /* BOTÓN 8 */
+  #boton08 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fc1a9b;
+    border: 2px solid #360ebc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #360ebc;
+    transition: all 0.3s ease;
+    scale: 0.9;
+  }
+  
+  #boton08:hover {
+    background-color: #fff;
+    color: #fc1a9b;
+    border: 2px solid #fc1a9b;
+    box-shadow: 5px 5px 0px #fc1a9b;
+    scale: 1;
+  }
+  
+  #boton08:active {
+    background-color: #acca1a;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  
