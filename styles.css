@@ -1,3 +1,9 @@
+.oscuro {
+  background: black;
+  border-radius: 9px;
+  padding: 20px;
+}
+
 /* BOTÓN 1 */
 #boton01 {
   font-size: 17px;
@@ -460,4 +466,109 @@
 #boton16:active {
   transform: translateY(2px);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* BOTÓN 17 */
+#boton17 {
+  font-size: 18px;
+  color: #01c4e7;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+#boton17:focus,
+#boton17:hover {
+  color: #01c4e7;
+}
+
+#boton17:focus:after,
+#boton17:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+#boton17:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #01c4e7;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/* BOTÓN 18 */
+#boton18 {
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #d20076;
+  background: #252525;
+  box-shadow: 3px 3px #d20076;
+  cursor: pointer;
+}
+
+#boton18:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+/* BOTÓN 19 */
+#boton19 {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+#boton19::before {
+  margin-left: auto;
+}
+
+#boton19::after, #boton19::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #43b5a0;
+  display: block;
+  transition: 0.5s;
+}
+
+#boton19:hover::after, #boton19:hover::before {
+  width: 100%;
+}
+
+/* BOTÓN 20 */
+#boton20 {
+  color: #ede6db;
+  background-color: #2d2d2d;
+  letter-spacing: 0.1em;
+  text-shadow: -1px -1px 1px #111111, 2px 2px 1px #363636;
+  border: 3px solid #2b97fa;
+  border-radius: 5px; /* Round the corners with a radius of 5 pixels */
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: all 0.1s ease-in;
+}
+
+#boton20:active {
+  border-color: #01c4e7;
+  color: #ede6db;
+  padding: 10px 30px;
 }
