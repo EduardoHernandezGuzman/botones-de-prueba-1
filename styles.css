@@ -632,3 +632,77 @@
  #boton22:active:before {
   background: #b9b9b9;
  }
+
+ /* BOTÓN 23 */
+ #boton23 {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #ffa341;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+}
+
+#boton23 span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #ff6f00;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+#boton23 span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+#boton23 span:not(hover) {
+  transition: all 1s;
+}
+
+ /* BOTÓN 24 */
+ #boton24 {
+  position: relative;
+  background-color: #4cad4c;
+  border-radius: 9px;
+  box-shadow: #dd77dd 0px 4px 3px 0px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#boton24::before {
+  content: "";
+  background-color: #2d8f2f;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 700ms ease-in-out;
+  display: inline-block;
+}
+
+#boton24:hover::before {
+  width: 100%;
+}
+
