@@ -766,4 +766,62 @@
   transform: translate(5px, -5px);
 }
 
+ /* BOTÓN 27 */
+ #boton27 {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: #47a0f0;
+  color: white;
+  border-radius: 4px;
+ }
+ 
+ #boton27:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, #ed7a1e 100%);
+ }
+ 
+ #boton27:active {
+  transform: translate(0em, 0.2em);
+ }
 
+/* BOTÓN 28 */
+#boton28 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: #ff4081;
+  color: #ffffff;
+  transition: all .7s ease-in-out;
+}
+
+#boton28:hover {
+  color: #000000;
+}
+
+#boton28::before {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  width: 0;
+  height: 100%;
+  content: "";
+  background-color: #40ffbe;
+  transition: all 700ms ease-in-out;
+}
+
+#boton28:hover::before {
+  left: unset;
+  right: 0;
+  width: 100%;
+  transform: rotate(180deg);
+}
